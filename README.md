@@ -36,3 +36,10 @@ In this cli/demo，I've added these packages：
 
 - cross-env ***/config/env.js***
 
+
+
+
+
+![image-20210322160429797](https://raw.githubusercontent.com/macshion/PicBed/main/2021/image-20210322160429797.png)
+
+![image-20210322160505979](C:\Users\wusong\AppData\Roaming\Typora\typora-user-images\image-20210322160505979.png)

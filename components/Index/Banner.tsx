@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { Carousel } from 'antd-mobile';
 import ImageType from '@/types/imageType';
 import Link from 'next/link';
-import  '@/static/style/Banner.module.less'
+import  '@/style/Banner.module.less'
 
-function Banner(props:{data:ImageType[]}) {
+function Banner(props:{data:ImageType[]}):React.ReactElement {
     const { data } = props
     useEffect(() => {
         console.log(data)

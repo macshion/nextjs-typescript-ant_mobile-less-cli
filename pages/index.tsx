@@ -1,9 +1,14 @@
 import Head from 'next/head'
 import BaseLayout from '@/components/Layout/BaseLayout'
 import Banner from '@/components/Index/Banner'
-import { useState } from 'react'
+import { GetStaticProps } from 'next'
+import ImageType from '@/types/imageType'
 
-const Index = (props) => {
+type Prop = {
+    bannerImageList: ImageType[]
+}
+
+const Index = (props:Prop):React.ReactElement => {
   const { bannerImageList } = props
   return (
     <>
@@ -11,8 +16,9 @@ const Index = (props) => {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
           </Head>
-          <BaseLayout title="无讼" keywords="SEO关键词" description="SEO描述">
+          <BaseLayout>
               <Banner data={bannerImageList}></Banner>
+              <div style={{ minHeight:'300px' }}>1111</div>
           </BaseLayout>
     </>
   )
@@ -20,8 +26,8 @@ const Index = (props) => {
 
 export default Index
 
-export const getStaticProps = async () => {
-    const bannerImageList = [{src:'https://raw.githubusercontent.com/macshion/PicBed/main/images/banner%20(2)%20(1).png',name:'3333'}]
+export const getStaticProps: GetStaticProps = async() => {
+    const bannerImageList = [{ src:'/assets/temp/banner1.png',name:'3333' },{ src:'/assets/temp/banner2.png',name:'3333' }]
     return {
         props: {
             bannerImageList

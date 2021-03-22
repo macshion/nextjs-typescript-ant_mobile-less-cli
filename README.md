@@ -1,4 +1,38 @@
- Created by next.js, running on [http://localhost:3000](http://localhost:3000)
+# A cli for develop SSR/ SSG mobile websites by Next.js 
 
-install: `yarn`
- run: `yarn dev`
+一个Webpack构建的React Next项目架构，用于制作手机网页，集成typescript、antd、antd-mobile、eslint，px自动转rem等。
+
+Created by next.js, running on [http://localhost:3000](http://localhost:3000)
+
+##### install: `yarn`
+
+run in development mode: `yarn dev`
+
+run in productive mode: `yarn start`
+
+Running with perimeters: `start-local`,`start-pro`,`build-dev`,`build-pro`, You can find more scripts in `package.json`.
+
+In this cli/demo，I've added these packages：
+
+- typescript
+
+- react
+
+- antd
+
+- antd-mobile
+
+- css/less
+
+- classnames
+
+- styled-components 
+
+  and ***babel-plugin-styled-components-px2rem***, automatically compile "px" to "rem"
+
+- husky
+
+- eslint
+
+- cross-env ***/config/env.js***
+

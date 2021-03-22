@@ -1,14 +1,44 @@
 {
-    "presets": ["next/babel"],
-    "plugins": [
-        [
-            "@babel/plugin-proposal-decorators",
-            {
-              "decoratorsBeforeExport":true
-            }
-        ],
-        "transform-decorators-legacy",
-        ["import", { "libraryName": "antd-mobile", "libraryDirectory": "lib", "style": true }, "ant-mobile"],
-        ["styled-components", { "ssr": true }]
-      ]
-  }
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "decoratorsBeforeExport": true
+      }
+    ],
+    "transform-decorators-legacy",
+    [
+      "import",
+      {
+        "libraryName": "antd-mobile",
+        "libraryDirectory": "./lib",
+        "style": true
+      },
+      "ant-mobile"
+    ],
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "libraryDirectory": "./lib",
+        "style": true
+      },
+      "ant"
+    ],
+    [
+      "styled-components-px2rem",
+      {
+        "multiplier": 1
+      }
+    ],
+    [
+      "styled-components",
+      {
+        "ssr": true
+      }
+    ]
+  ]
+}

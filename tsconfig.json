@@ -18,10 +18,8 @@
     "paths": {
       "@/components/*": ["components/*"],
       "@/lib/*": ["lib/*"],
-      "@/styles/*": ["styles/*"],
+      "@/style/*": ["style/*"],
       "@/api/*": ["api/*"],
-      "@/static/*": ["static/*"],
-      "@/content/*": ["content/*"],
       "@/types/*": ["types/*"]
     }
   },
